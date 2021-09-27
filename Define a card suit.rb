@@ -1,12 +1,8 @@
 def define_suit(card)
-  case card
-  when card[1] = S
-    return "Spades"
-  when card[1] = C
-    return "Clubs"
-  when card[1] = D
-    return "Diamonds"
-  when card[1] = H
-    return "Hearts"
+  case
+  when card.include?("S") then "spades"
+  when card.include?("C") then "clubs"
+  when card.include?("D") then "diamonds"
+  when card.include?("H") then "hearts"
   end
 end
