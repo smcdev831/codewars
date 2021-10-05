@@ -3,6 +3,6 @@
 #  verb + noun
 #}
 
-main[verb, noun]
-  puts verb = noun
+def main(verb, noun)
+  verb + noun
 end
