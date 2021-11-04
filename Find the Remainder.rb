@@ -1,9 +1,5 @@
 def remainder(a, b)
-  if a || b == 0
-    return nil
-  elsif a < b
-    return b % a
-  else
-    return a % b
-  end
+  return nil if a == 0 || b == 0
+  return a.abs % b.abs if a >= b
+  return b.abs % a.abs if b >= a
 end
