@@ -1,4 +1,5 @@
 //https://www.codewars.com/kata/5fa6d9e9454977000fb0c1f8/train/javascript
+//used solution - no credit
 
 function unpackSausages(truck) {
   let packages = [];
