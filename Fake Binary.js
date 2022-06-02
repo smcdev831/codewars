@@ -9,3 +9,13 @@ function fakeBin(x) {
   }
   return arr;
 }
+
+//refactoring
+
+function fakeBin(x) {
+  let arr = "";
+  for (let i = 0; i < x.length; i++) {
+    Number(x[i]) >= 5 ? 1 : 0;
+  }
+  return arr;
+}
