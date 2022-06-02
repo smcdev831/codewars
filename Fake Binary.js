@@ -15,7 +15,7 @@ function fakeBin(x) {
 function fakeBin(x) {
   let arr = "";
   for (let i = 0; i < x.length; i++) {
-    Number(x[i]) >= 5 ? 1 : 0;
+    Number(x[i]) >= 5 ? (arr += 1) : (arr += 0);
   }
   return arr;
 }
