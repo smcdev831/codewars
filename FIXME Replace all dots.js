@@ -3,3 +3,6 @@ var replaceDots = function (str) {
 };
 
 //refactoring
+var replaceDots = function (str) {
+  return str.split(".").join("-");
+};
