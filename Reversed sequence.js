@@ -5,3 +5,12 @@ const reverseSeq = (n) => {
   }
   return numbers.reverse();
 };
+
+//refactoring
+const reverseSeq = (n) => {
+  let numbers = [];
+  for (let i = n; i >= 1; i--) {
+    numbers.push(i);
+  }
+  return numbers;
+};
