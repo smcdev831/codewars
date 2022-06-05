@@ -5,3 +5,9 @@ function repeatStr(n, s) {
   }
   return repeating;
 }
+
+//refactoring
+
+function repeatStr(n, s) {
+  return s.repeat(n);
+}
