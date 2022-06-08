@@ -40,3 +40,25 @@ function calculateAge(birthYear, askedYear) {
     return `You will be born in ${age} year.`;
   }
 }
+
+//refactoring
+var calculateAge = (birthYear, askedYear) => {
+  age = askedYear - birthYear;
+  switch (true) {
+    case age > 1:
+      return "You are " + age + " years old.";
+      break;
+    case age === 1:
+      return "You are 1 year old.";
+      break;
+    case age === 0:
+      return "You were born this very year!";
+      break;
+    case age === -1:
+      return "You will be born in 1 year.";
+      break;
+    case age < -1:
+      return "You will be born in " + -age + " years.";
+      break;
+  }
+};
