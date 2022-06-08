@@ -7,3 +7,8 @@ function correctTail(bod, tail) {
     return false;
   }
 }
+
+//refactoring
+function correctTail(bod, tail) {
+  return bod.endsWith(tail);
+}
