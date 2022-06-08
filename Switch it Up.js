@@ -99,3 +99,19 @@ function switchItUp(number) {
     ? "Nine"
     : "This is not a number between 0 and 9";
 }
+
+//refactoring
+function switchItUp(number) {
+  return [
+    "Zero",
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+  ][number];
+}
