@@ -24,3 +24,19 @@ function calculateAge(birthYear, askedYear) {
       break;
   }
 }
+
+//refactoring
+function calculateAge(birthYear, askedYear) {
+  age = birthYear - askedYear;
+  if (birthYear === askedYear) {
+    return "You were born this very year!";
+  } else if (birthYear < askedYear && age != 1 && age != -1) {
+    return `You are ${age * -1} years old.`;
+  } else if (birthYear < askedYear) {
+    return `You are ${age * -1} year old.`;
+  } else if (birthYear > askedYear && age != 1 && age != -1) {
+    return `You will be born in ${age} years.`;
+  } else {
+    return `You will be born in ${age} year.`;
+  }
+}
