@@ -5,3 +5,9 @@ function boolToWord(bool) {
     return "No";
   }
 }
+
+//refactoring
+
+function boolToWord(bool) {
+  return bool ? "Yes" : "No";
+}
