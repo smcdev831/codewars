@@ -7,6 +7,3 @@ function DNAtoRNA(dna) {
 }
 
 //refactoring
-function DNAtoRNA(dna) {
-  return dna.replaceAll("T", "U");
-}
