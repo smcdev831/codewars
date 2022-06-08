@@ -5,3 +5,8 @@ function checkAlive(health) {
     return true;
   }
 }
+
+//refactoring
+function checkAlive(health) {
+  return health > 0;
+}
