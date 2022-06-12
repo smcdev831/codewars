@@ -13,3 +13,15 @@ function stairsIn20(s) {
   }
   return 20 * days;
 }
+
+//refactoring
+
+function stairsIn20(s) {
+  let total = 0;
+  for (let i = 0; i < s.length; i++) {
+    for (let d = 0; d < s[i].length; d++) {
+      total += s[i][d];
+    }
+  }
+  return total * 20;
+}
