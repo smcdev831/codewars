@@ -35,3 +35,9 @@ function well(x) {
       break;
   }
 }
+
+//refactor8ing
+function well(x) {
+  let goods = x.filter((x) => x === "good").length;
+  return goods == 0 ? "Fail!" : goods < 3 ? "Publish!" : "I smell a series!";
+}
