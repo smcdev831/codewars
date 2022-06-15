@@ -5,3 +5,8 @@ function problem(x) {
     return x * 50 + 6;
   }
 }
+
+//refactoring
+function problem(x) {
+  return typeof x === "string" ? "Error" : x * 50 + 6;
+}
