@@ -3,3 +3,8 @@ function aspectRatio(x, y) {
   resolution = [x, y];
   return resolution;
 }
+
+//refactoring
+function aspectRatio(x, y) {
+  return [Math.ceil(y * (16 / 9)), y];
+}
