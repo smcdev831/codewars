@@ -16,3 +16,22 @@ function well(x) {
     return "Fail!";
   }
 }
+
+//refactoring
+function well(x) {
+  let goods = x.filter((x) => x === "good").length;
+  switch (goods) {
+    case 0:
+      return "Fail!";
+      break;
+    case 1:
+      return "Publish!";
+      break;
+    case 2:
+      return "Publish!";
+      break;
+    default:
+      return "I smell a series!";
+      break;
+  }
+}
