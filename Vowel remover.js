@@ -6,3 +6,11 @@ function shortcut(string) {
   newString = newString.split("u").join("");
   return newString;
 }
+
+//refactoring
+function shortcut(string) {
+  return string
+    .split("")
+    .filter((string) => !"aeiou".includes(string))
+    .join("");
+}
