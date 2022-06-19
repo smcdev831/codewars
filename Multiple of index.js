@@ -7,3 +7,8 @@ function multipleOfIndex(array) {
   }
   return multiples;
 }
+
+//refactoring
+function multipleOfIndex(array) {
+  return array.filter((x, y) => x % y == 0);
+}
