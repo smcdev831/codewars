@@ -26,3 +26,5 @@ function whatday(num) {
       break;
   }
 }
+
+//refactoring
