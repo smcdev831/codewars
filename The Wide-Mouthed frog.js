@@ -5,3 +5,8 @@ function mouthSize(animal) {
     return "wide";
   }
 }
+
+//refactoring
+function mouthSize(animal) {
+  return animal.toUpperCase() === "ALLIGATOR" ? "small" : "wide";
+}
