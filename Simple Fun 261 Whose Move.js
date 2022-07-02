@@ -9,3 +9,8 @@ function whoseMove(lastPlayer, win) {
     return "black";
   }
 }
+
+//refactoring
+function whoseMove(lastPlayer, win) {
+  return win ? lastPlayer : lastPlayer === "white" ? "black" : "white";
+}
