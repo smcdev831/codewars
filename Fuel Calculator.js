@@ -14,3 +14,14 @@ function fuelPrice(litres, pricePerLitre) {
   }
   return Number(total.toFixed(2));
 }
+
+//refactoring
+function fuelPrice(litres, pricePerLitre) {
+  for (let i = 2; i <= 10; i += 2) {
+    if (litres >= i) {
+      pricePerLitre -= 0.05;
+    }
+    total = litres * pricePerLitre;
+  }
+  return Number(total.toFixed(2));
+}
