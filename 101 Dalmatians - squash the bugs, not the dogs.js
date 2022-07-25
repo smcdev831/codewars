@@ -16,3 +16,17 @@ function howManyDalmatians(number) {
     return dogs[2];
   }
 }
+
+//refactoring
+
+function howManyDalmatians(number) {
+  if (number === 101) {
+    return "101 DALMATIANS!!!";
+  } else if (number <= 10) {
+    return "Hardly any";
+  } else if (number <= 50) {
+    return "More than a handful!";
+  } else {
+    return "Woah that's a lot of dogs!";
+  }
+}
