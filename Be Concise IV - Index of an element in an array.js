@@ -15,3 +15,8 @@ function find(array, element) {
   let val = array.indexOf(element);
   return val === -1 ? "Not found" : array.indexOf(element);
 }
+
+function find(a, e) {
+  let val = a.indexOf(e);
+  return val === -1 ? "Not found" : a.indexOf(e);
+}
