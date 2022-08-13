@@ -10,3 +10,8 @@ function find(array, element) {
     return val;
   }
 }
+
+function find(array, element) {
+  let val = array.indexOf(element);
+  return val === -1 ? "Not found" : array.indexOf(element);
+}
