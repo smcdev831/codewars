@@ -20,3 +20,8 @@ function find(a, e) {
   let val = a.indexOf(e);
   return val === -1 ? "Not found" : a.indexOf(e);
 }
+
+//refactored solution
+function find(a, e) {
+  return a.includes(e) ? a.indexOf(e) : "Not found";
+}
