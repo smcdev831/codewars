@@ -31,11 +31,11 @@ function describeAge(a) {
 }
 
 function describeAge(a) {
-  return a <= 12
+  return a < 13
     ? "You're a(n) kid"
-    : a <= 17
+    : a < 18
     ? "You're a(n) teenager"
-    : a <= 64
+    : a < 65
     ? "You're a(n) adult"
     : "You're a(n) elderly";
 }
