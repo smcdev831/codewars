@@ -7,3 +7,11 @@ function cookie(x) {
     return "Who ate the last cookie? It was the dog!";
   }
 }
+
+//refactoring
+function cookie(x) {
+  let type = typeof x;
+  let name =
+    type === "string" ? "Zach" : type === "number" ? "Monica" : "the dog";
+  return `Who ate the last cookie? It was ${name}!`;
+}
