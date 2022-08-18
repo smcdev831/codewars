@@ -1,0 +1,1 @@
+function bigToSmall(arr) {}
