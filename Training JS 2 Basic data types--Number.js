@@ -7,22 +7,22 @@ function equal1() {
 }
 //Please refer to the example above to complete the following functions
 function equal2() {
-  var a = 200; //set number value to a
-  var b = 100; //set number value to b
+  var a = v4; //set number value to a
+  var b = v2; //set number value to b
   return a - b;
 }
 function equal3() {
-  var a = 25; //set number value to a
-  var b = 4; //set number value to b
+  var a = v1; //set number value to a
+  var b = v5; //set number value to b
   return a * b;
 }
 function equal4() {
-  var a = 100; //set number value to a
-  var b = 1; //set number value to b
+  var a = v4; //set number value to a
+  var b = v5; //set number value to b
   return a / b;
 }
 function equal5() {
-  var a = 700; //set number value to a
-  var b = 200; //set number value to b
+  var a = v6; //set number value to a
+  var b = v3; //set number value to b
   return a % b;
 }
