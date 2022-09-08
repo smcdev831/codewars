@@ -5,3 +5,9 @@ function greet(name) {
     return "Hello, " + name + "!";
   }
 }
+
+//refactoring
+
+function greet(name) {
+  return name === "Johnny" ? "Hello, my love!" : `Hello, ${name}!`;
+}
