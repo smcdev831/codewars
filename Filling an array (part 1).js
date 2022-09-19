@@ -5,3 +5,6 @@ function arr(n) {
   }
   return list;
 }
+
+//refactoring w/arrow function
+const arr = (n) => Array.from({ length: n }, (_, i) => i);
