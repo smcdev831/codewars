@@ -8,3 +8,13 @@ function roundIt(n) {
     return Math.round(n);
   }
 }
+
+//refactoring
+function roundIt(n) {
+  let numbers = String(n).split(".");
+  return numbers[0].length < numbers[1].length
+    ? Math.ceil(n)
+    : numbers[0].length > numbers[1].length
+    ? Math.floor(n)
+    : Math.round(n);
+}
