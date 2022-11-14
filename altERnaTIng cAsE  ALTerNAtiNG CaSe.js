@@ -1,0 +1,1 @@
+String.prototype.toAlternatingCase = function () {};
