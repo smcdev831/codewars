@@ -1,3 +1,6 @@
 function htmlspecialchars(formData) {
-  // Insert your code here
+  formData.replace("<", "&lt;");
+  formData.replace(">", "&gt;");
+  formData.replace(`"`, "&quot;");
+  formData.replace("&", "&amp;");
 }
