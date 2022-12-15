@@ -1,3 +1,3 @@
-String.prototype.digit = function (x) {
-  return typeof Number(x) == Number;
+String.prototype.digit = function () {
+  return this.length === 1 && "0" <= this && this <= "9";
 };
