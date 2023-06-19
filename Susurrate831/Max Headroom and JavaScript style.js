@@ -6,8 +6,7 @@ function getMax1() {
 }
 
 function getMax2() {
-  var max = {
+  return {
     name: "Max Headroom",
   };
-  return max;
 }
