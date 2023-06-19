@@ -1,16 +1,11 @@
-class Warrior {
-  constructor(newName) {
-    this.wName = newName;
-  }
-
-  name(newName) {
-    if (newName) {
-      this.wName = newName;
-    }
-    return this.wName;
-  }
+function Warrior(n) {
+  var name = n;
+  this.name = function (n) {
+    if (n) name = n;
+    return name;
+  };
 }
 
 Warrior.prototype.toString = function () {
-  return `Hi! my name's ${this.wName}`;
+  return "Hi! my name's " + this.name();
 };
